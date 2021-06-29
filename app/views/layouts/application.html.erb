@@ -1,34 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Reservation2App</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
-        <%= csp_meta_tag %>
+    <%= csp_meta_tag %>
 
-            <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-                <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-</head>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
 
-<body>
-    <header>
-        <div class="header-inner">
-            <div class="header-inner-left">
-                <a href=""><img src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png" alt="サイトのロゴ画像"></a>
-                <input class="search-box" type="search" name="search" placeholder="エリア">
-                <input class="search-box" type="search" name="search" placeholder="キーワード">
-            </div>
-            <div class="header-inner-right">
-                <%= link_to 'ログイン', '/users/sign_in', class: 'button-blue'%>
-                    <%= link_to '登録する', '', class: 'button-gray'%>
-            </div>
+  <body>
+      <header>
+      <div class="header-inner">
+        <div class="header-inner-left">
+          <a href=""><img src="https://presite-potepancamp-rails-02.herokuapp.com/assets/logo.png" alt="サイトのロゴ画像"></a>
+          <input class="search-box" type="search" name="search" placeholder="エリア">
+          <input class="search-box" type="search" name="search" placeholder="キーワード">
         </div>
+        <div class="header-inner-right">
+          <div class="button-blue"><a  href="">ログイン</a></div>
+          <div class="button-gray" ><a href="http://127.0.0.1:3000/users/new">登録する</a></div>
+        </div>
+      </div>
     </header>
     <%= yield %>
-        <footer>
-            <p>© 2020 POTEPAN.INC.</p>
-        </footer>
-</body>
-
+    <p>aaaa</a>
+    <footer>
+      <p>© 2020 POTEPAN.INC.</p>
+    </footer>
+  </body>
 </html>

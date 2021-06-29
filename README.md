@@ -5,8 +5,8 @@
 
 - トップページ
 - users ユーザ
-  - sign-in ログイン  users/sign_in
-  - sign-up 新規登録　nameを定義する　users/sign_up
+  - sign-in ログイン
+  - sign-up 新規登録
   - account アカウント
   - edit アカウント変更(メアドとパスワード変更)
   - profile プロフィール更新
@@ -28,7 +28,3 @@
  - roomsコントローラー
 - Reservationモデル
  - reservationsコントローラー
-
- rails g devise:controllers users
-
- users/1 はある。　1しかないから
