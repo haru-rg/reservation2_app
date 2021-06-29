@@ -7,5 +7,5 @@ end
 private
 
   def set_user
-    @user = User.find([:id])
+    # @user = User.find([:id])
   end
